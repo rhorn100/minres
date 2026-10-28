@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rhorn100-minres"
+version = "0.1.0"
+description = "解析时间标记，排列视觉提示的最小分辨率的发生顺序，标出间隔异常与逆序事件"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "rhorn100" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://rhorn100.github.io"
+Repository = "https://github.com/rhorn100/minres"
+Issues = "https://github.com/rhorn100/minres/issues"
+
+[project.scripts]
+minres = "minres:main"
+
+[tool.setuptools]
+py-modules = ["minres"]
